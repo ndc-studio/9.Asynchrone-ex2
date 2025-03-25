@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
+    <title>Exercise 2</title>
+</head>
+<style>
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        background-color: #f1f1f1;
+    }
+
+    #select {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    #container {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    #btn {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    #div {
+        text-align: center;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        margin-top: 20px;
+    }
+
+</style>
+<body>
+    <select id="select">
+        <option value="FR">France</option>
+        <option value="EN">USA</option>
+        <option value="SP">Spain</option>
+        <option value="GE">Germany</option>
+        <option value="IT">Italy</option>
+    </select>
+
+    <section id="container">
+        <form id="form">
+            <input type="text" id="input" placeholder="Enter a firstname">
+            <button type="submit" id="btn">Search</button>
+        </form>
+    </section>
+    <section id="div">
+    </section>
+</body>
+</html>
